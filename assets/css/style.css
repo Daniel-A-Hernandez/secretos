@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+        --overlay: rgba(6, 6, 10, 0.712);
+        --card-a: linear-gradient(145deg,#1a1a1a,#141414);
+        --accent:#b91f36 ;
+        --poppins: 'Poppins', sans-serif;
+        --inter: 'Inter', sans-serif;
+    }
+    body {
+        margin: 0;
+        font-family: var(--inter);
+        background: #0e0e0e;
+        color: #eee;
+        background-image: url("../img/winterhill-horizontal.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    /* CONTENEDOR GLOBAL */
+    .container{
+        max-width:1200px;
+        margin:0 auto;
+        padding:0 1rem;
+    }
+
+    /* HEADER */
+    header{
+        width:100%;
+        position:sticky;
+        top:0;
+        z-index:30;
+        font-family: var(--poppins);
+        backdrop-filter: blur(6px);
+        background: rgba(6,6,6,0.55);
+        border-bottom: 1px solid rgba(255,255,255,0.03);
+    }
+    header .content{
+        max-width:1200px; 
+        margin:auto; 
+        display:flex; 
+        align-items:center; 
+        justify-content:space-between; 
+        padding:1rem 1.25rem;
+    }
+    header h1{margin:0; font-size:1.5rem; color:#fff; letter-spacing:1px;}
+    header nav a{color:#ddd; text-decoration:none; margin-left:1.2rem; transition:color .2s}
+    header nav a:hover{color:var(--accent)}
+
+    /* INTRO */
+
+
+    /* AUTORA / PUEBLO */
+  .section-full {
+    width: 100%;
+    padding: 2rem 0;
+    }
+
+    /* Contenedor centrado */
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+
+    /* Panel interno si lo deseas más limpio */
+    .panel {
+        background: #151515;
+        padding: 1.6rem;
+        border-radius: 10px;
+    }
+    .panel{
+        background:rgba(0,0,0,0.5); 
+        padding:1rem; 
+        border-radius:10px
+    }
+    .panel h3{margin:0 0 .5rem 0; color:var(--accent); font-family: var(--poppins); font-size: 1.5rem;}
+    .panel p{color:#ddd; line-height:1.5; font-family: var(--inter);}
+    /* Dropdown base */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    padding: 0.5rem 0;
+    margin-left: 1.2rem;
+    transition: color .3s ease;
+}
+
+.dropdown-toggle:hover {
+    color: #9b6dff;
+}
+
+/* Menú interno */
+.dropdown-menu {
+    position: absolute;
+    top: 2.3rem;
+    left: 0;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 8px;
+    min-width: 180px;
+    display: none;
+    flex-direction: column;
+    padding: 0.5rem 0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    z-index: 999;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.7rem 1rem;
+    color: #e6e6e6;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background .3s ease;
+}
+
+.dropdown-menu a:hover {
+    background: #222;
+}
+
+/* Mostrar al pasar */
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+/* Responsive: menú vertical */
+@media(max-width: 768px){
+    .dropdown-menu {
+        position: static;
+        background: #0c0c0c;
+        border: none;
+        box-shadow: none;
+        padding-left: 1rem;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+
+    /* TITULO PERSONAJES */
+    .titulo{
+        max-width:1100px; 
+        margin:2rem auto .5rem; 
+        padding:0 1rem; 
+        font-size:2rem; 
+        color:#fafafa; 
+        font-weight:700; 
+        border-bottom:3px solid var(--accent); 
+        text-align: center;
+    }
+
+    .familia-titulo{
+        font-size:1.25rem; 
+        margin:1.6rem auto .6rem; 
+        padding-left:1rem; 
+        max-width:1100px;
+        font-weight:700; 
+        color:#e6e6e6; 
+        border-left:4px solid rgba(255,255,255,0.05)
+    }
+
+    /* GRID CENTRADO */
+    .grid{
+        max-width:1100px;
+        margin:0 auto 2rem;
+        display:grid; 
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+        gap:1.25rem; 
+        padding:0 1rem; 
+        justify-content:center;
+    } 
+    .card{
+        background:var(--card-a); 
+        border-radius:12px; 
+        overflow:hidden; 
+        box-shadow:0 8px 26px rgba(0,0,0,0.6); 
+        border:1px solid rgba(255,255,255,0.03); 
+        transition:transform .22s, box-shadow .22s
+    }
+    .card:hover{transform:translateY(-6px) scale(1.01); box-shadow:0 14px 36px rgba(0,0,0,0.7)}
+    .card img{width:100%; height:170px; object-fit:cover; display:block; filter:brightness(.82); transition:filter .25s}
+    .card:hover img{filter:brightness(1)}
+    .card-content{padding:12px 14px}
+    .card h3{margin:0; font-size:1.1rem; color:#fff}
+    .card small{display:block; margin-top:6px; color:#bdbdbd; font-size:.82rem}
+    .descripcion{margin-top:8px; color:#d0d0d0; font-size:.92rem; line-height:1.35}
+
+    /* responsive */
+    @media (max-width:900px){
+        .panels{grid-template-columns:1fr} 
+        .titulo{font-size:1.6rem}
+    }
+    @media (max-width:520px){
+        header .content{padding:0.75rem;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        gap: 19px;
+        } 
+        .card img{height:140px}
+    }
+
+    /* FOG OVERLAY */
+    .fog-overlay{
+        position:fixed; 
+        inset:0; 
+        pointer-events:none; 
+        z-index:5; 
+        background:linear-gradient(rgba(6,6,8,0.15), rgba(6,6,8,0.35)); 
+        mix-blend-mode:screen
+    }
