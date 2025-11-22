@@ -1,0 +1,254 @@
+/*=========================
+    TIPOGRAFÍAS
+=========================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/*=========================
+    VARIABLES
+=========================*/
+:root {
+    --bg-night: #0a0a12;
+    --bg-card: rgba(0, 0, 0, 0.205);
+    --primary: #c57fee;
+    --primary-bright: #e7b1ff;
+    --text: #f5eaff;
+    --text-soft: #d9cce6;
+    --white: #ffffff;
+
+    --radius: 18px;
+    --shadow-soft: 0 0 20px rgba(197, 127, 238, 0.25);
+}
+
+/*=========================
+    RESETEO
+=========================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--bg-night);
+    color: var(--text);
+    overflow-x: hidden;
+    line-height: 1.7;
+    position: relative;
+}
+
+/*=========================
+    ANIMACIÓN DE ESTRELLAS
+=========================*/
+
+/* Contenedor general */
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    pointer-events: none;
+    z-index: -2;
+    background-repeat: repeat;
+}
+
+/* Capa 1 estrellas */
+body::before {
+    background-image: url('../img/noise.svg');
+    opacity: 0.09;
+}
+
+/* Capa 2 estrellas animadas */
+body::after {
+    background-image: radial-gradient(2px 2px at 20% 20%, rgba(255,255,255,0.9), transparent),
+                      radial-gradient(1.5px 1.5px at 70% 40%, rgba(255,255,255,0.7), transparent),
+                      radial-gradient(2px 2px at 40% 80%, rgba(255,255,255,0.6), transparent),
+                      radial-gradient(1px 1px at 60% 10%, rgba(255,255,255,0.5), transparent),
+                      radial-gradient(1.5px 1.5px at 90% 70%, rgba(255,255,255,0.4), transparent);
+
+    animation: starsMove 45s linear infinite;
+    opacity: 0.45;
+}
+
+@keyframes starsMove {
+    0% { transform: translateY(0) translateX(0); }
+    100% { transform: translateY(-400px) translateX(-300px); }
+}
+
+
+/*=========================
+    CONTENEDORES
+=========================*/
+.container {
+    width: min(1100px, 90%);
+    margin: auto;
+}
+
+/*=========================
+    HEADER
+=========================*/
+.header {
+    padding: 2.5rem 0;
+    text-align: center;
+}
+.site-title {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.4rem;
+    background: linear-gradient(90deg, #d79bff, #a96eff, #d79bff);
+    background-size: 300%;
+    text-shadow: var(--shadow-soft);
+    animation: colorFlow 8s ease-in-out infinite;
+    border-radius:10px;
+}
+
+@keyframes colorFlow {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/*=========================
+    HERO
+=========================*/
+.hero {
+    padding: 4rem 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-img img {
+    border-radius: var(--radius);
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 25px rgba(255, 180, 255, 0.25);
+    animation: float 8s ease-in-out infinite;
+}
+
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.hero-text h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primary-bright);
+}
+
+.hero-text p {
+    color: var(--text-soft);
+    font-size: 1.05rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/*=========================
+    BIO
+=========================*/
+.bio {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.bio h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 0.7rem;
+}
+
+/*=========================
+    OBRAS
+=========================*/
+.obras {
+    padding: 4rem 0;
+}
+
+.obras h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: var(--primary-bright);
+    margin-bottom: 2rem;
+}
+
+.obras-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.obra-card {
+    background: var(--bg-card);
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: 0 0 25px rgba(197, 127, 238, 0.1);
+    backdrop-filter: blur(4px);
+    text-align: center;
+    transition: 0.3s ease;
+}
+.obra-card img {
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+.obra-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 0 35px rgba(197, 127, 238, 0.25);
+}
+
+.obra-card h3 {
+    margin: 1rem 0 0.5rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary);
+}
+
+.obra-card p {
+    font-size: 0.95rem;
+    color: var(--text-soft);
+    margin-bottom: 1.4rem;
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn:hover {
+    background: var(--primary-bright);
+}
+
+/*=========================
+    FOOTER
+=========================*/
+.footer {
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: var(--text-soft);
+}

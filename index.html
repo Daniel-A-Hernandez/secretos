@@ -1,122 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="./assets/css/style.css" />
-<title>Secretos</title>
-<style>
-    
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autora - Alejandra Morales</title>
+    <link rel="stylesheet" href="./assets/css/autora_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<div class="fog-overlay" aria-hidden="true"></div>
-
-<header>
-    <div class="content">
-        <h1>Secretos</h1>
-        <nav>
-            <a href="autora.html">Autora</a>
-            <div class="nav-item dropdown">
-    <span class="dropdown-toggle">Libros</span>
-    <ul class="dropdown-menu">
-        <li><a href="libro1.html">Secretos</a></li>
-        <li><a href="libro2.html">Niebla Interna</a></li>
-        <li><a href="libro3.html">El Susurro del Bosque</a></li>
-    </ul>
-</div>
-
-        </nav>
+<header class="header">
+    <div class="container">
+        <h1 class="site-title">ALEJANDRA MORALES</h1>
     </div>
 </header>
 
-<section class="section-full" id="autora-pueblo">
-    <div class="container">
-        <div class="panel" id="pueblo">
-            <h3>WINTERHILL</h3>
+<main>
+
+    <!--======== HERO ========-->
+    <section class="hero">
+        <div class="container hero-grid">
+
+            <figure class="hero-img">
+                <img src="assets/img/alejandra morales.jpg" alt="Foto de la autora Alejandra Morales">
+            </figure>
+
+            <article class="hero-text">
+                <h2>Sobre la Autora</h2>
+                <p>
+                    <strong>Alejandra</strong> (n. 2005) — Escritora enfocada en el misterio y el realismo oscuro.  
+                    Nacida en San Salvador, explora en sus obras la memoria de los lugares, los secretos familiares y los ecos del pasado.  
+                    <em>Secretos</em> es su primera novela, una mezcla intensa de suspenso, drama y misterio emocional.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <!--======== BIO ========-->
+    <section class="bio">
+        <div class="container">
+            <h2>Biografía</h2>
             <p>
-                Un pueblo conocido por su elegancia y prestigio, las familias Westbrook y Russell han construido su reputación sobre una fachada impecable.
-                Sin embargo, sus herederos esconden secretos capaces de destruirlo todo... <br><br> 
-                Aislado por densos bosques y envuelto con frecuencia en una neblina fría que parece nunca disiparse. Sus calles empedradas, mansiones antiguas y tradición aristocrática lo convierten en un lugar tan hermoso como inquietante. <br><br>
-                Aunque a simple vista es un refugio de lujo y perfección, bajo esa apariencia se ocultan historias silenciadas, rencores heredados y sombras que el tiempo no ha logrado borrar.
-                En Winterhill, el silencio pesa, y cada rincón guarda un secreto que espera ser descubierto.
+                Desde niña, Alejandra mostró una afinidad natural por los relatos y las sombras.  
+                Inspirada por paisajes nublados y mitos locales, desarrolló un estilo íntimo, emocional y cargado de simbolismos.  
+                Su obra combina la vulnerabilidad humana con lo desconocido, creando atmósferas densas y envolventes.
             </p>
         </div>
-    </div>
-</section>  
+    </section>
 
-<div id="personajes" class="titulo container">Personajes</div>
+    <!--======== OBRAS ========-->
+    <section class="obras">
+        <div class="container">
+            <h2>Biblioteca de Obras</h2>
 
-<!-- A PARTIR DE AQUÍ SE MANTIENE TODO IGUAL, SOLO CENTRADO CON .grid -->
- <div class="familia-titulo">Familia Westbrook Ferreti</div>
-<div class="grid">
-    <div class="card"><img src="assets/img/kendall-westbrook.jpg" alt="Kendall"><div class="card-content"><h3>Kendall Westbrook Ferreti</h3><small>19 años</small><div class="descripcion">Curiosa, impulsiva y valiente; clave para revelar secretos que muchos quisieran enterrar.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Keyden"><div class="card-content"><h3>Keyden Westbrook</h3><small>Patriarca</small><div class="descripcion">Hombre de presencia fría; su autoridad impone tanto respeto como temor.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Cassandra"><div class="card-content"><h3>Cassandra Ferreti de Westbrook</h3><small>Matriarca</small><div class="descripcion">Elegante y calculadora; su pasado oculta decisiones que marcaron el destino de varias familias.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Keyler"><div class="card-content"><h3>Keyler Westbrook Ferreti</h3><small>18 años</small><div class="descripcion">Impulsivo, con un fuerte sentido del honor; a menudo actúa antes de pensar.</div></div></div>
-</div>
+            <div class="obras-grid">
 
-<!-- FAMILIA 2 -->
-<div class="familia-titulo">Familia Westbrook Bennett</div>
-<div class="grid">
-    <div class="card"><img src="assets/img/kendrick westbrook.jpg" alt="Kendrick"><div class="card-content"><h3>Kendrick Westbrook Kovalev</h3><small>24 años</small><div class="descripcion">Exmilitar, disciplinado; vuelve al pueblo con ideas claras y poca paciencia para mentiras.</div></div></div>
-    <div class="card"><img src="assets/img/kelly westbrook.jpg" alt="Kelly"><div class="card-content"><h3>Kelly Westbrook Bennett</h3><small>17 años</small><div class="descripcion">Inteligente y observadora; su mirada no pasa desapercibida entre los mayores.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Khalid"><div class="card-content"><h3>Khalid Westbrook</h3><small>Patriarca</small><div class="descripcion">Reservado y astuto; maneja negocios discretos y aliados fuera de Grayfall.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Alondra"><div class="card-content"><h3>Alondra Bennett de Westbrook</h3><small>Matriarca</small><div class="descripcion">Protectora y firme; dispuesta a todo para mantener a su familia a salvo.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Kenneth"><div class="card-content"><h3>Kenneth Westbrook Bennett</h3><small>17 años</small><div class="descripcion">Rebelde y apasionado; actúa por impulsos y carga con rencores familiares.</div></div></div>
-</div>
+                <article class="obra-card">
+                    <figure>
+                        <img src="assets/img/secretos-libro-portada.png" alt="Portada del libro Secretos">
+                    </figure>
+                    <h3>Secretos</h3>
+                    <p>Una novela que explora los misterios ocultos bajo la neblina de Winterhill.</p>
+                    <a href="secretos.html" class="btn">Conocer más</a>
+                </article>
 
-<!-- FAMILIA 3 -->
-<div class="familia-titulo">Familia Russell Leblanc</div>
-<div class="grid">
-    <div class="card"><img src="assets/img/myles russell.jpg" alt="Myles"><div class="card-content"><h3>Myles Russell Leblanc</h3><small>22 años</small><div class="descripcion">Intenso y reservado; su silencio esconde más de lo que admite.</div></div></div>
-    <div class="card"><img src="assets/img/alec russell1.jpg" alt="Alec"><div class="card-content"><h3>Alec Russell Leblanc</h3><small>20 años</small><div class="descripcion">Sociable y despreocupado; muchas veces subestimado por su familia.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Frederick"><div class="card-content"><h3>Frederick Russell</h3><small>Patriarca</small><div class="descripcion">Figura influyente en Grayfall; ambicioso y con métodos cuestionables.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Juliette"><div class="card-content"><h3>Juliette Leblanc de Russell</h3><small>Matriarca</small><div class="descripcion">Encantadora y enigmática; parece conocer historias que nadie le contó.</div></div></div>
-</div>
+                <article class="obra-card">
+                    <figure>
+                        <img src="img/libro2.jpg" alt="Portada de Niebla Interna">
+                    </figure>
+                    <h3>Niebla Interna</h3>
+                    <p>Relatos psicológicos que profundizan en la fragilidad emocional.</p>
+                </article>
 
-<!-- FAMILIA 4 -->
-<div class="familia-titulo">Familia Hoffman Meyer</div>
-<div class="grid">
-    <div class="card"><img src="assets/img/jennell hoffman.jpg" alt="Jennell"><div class="card-content"><h3>Jennell Hoffman Meyer</h3><small>22 años</small><div class="descripcion">Empática y valiente; arrastra un dilema que podría cambiar su destino.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Dereck"><div class="card-content"><h3>Dereck Hoffman</h3><small>Patriarca</small><div class="descripcion">Hombre práctico y directo; actúa como pilar comunitario cuando el conflicto estalla.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Mallory"><div class="card-content"><h3>Mallory Meyer de Hoffman</h3><small>Matriarca</small><div class="descripcion">Reservada y cálida; su temple calma a la familia en tiempos de crisis.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Christine"><div class="card-content"><h3>Christine Hoffman</h3><small>Hija</small><div class="descripcion">Curiosa e inquieta; suele encontrar pistas que otros pasan por alto.</div></div></div>
-</div>
+                <article class="obra-card">
+                    <figure>
+                        <img src="img/libro3.jpg" alt="Portada de El Susurro del Bosque">
+                    </figure>
+                    <h3>El Susurro del Bosque</h3>
+                    <p>Una historia donde el bosque parece respirar, mirar y recordar.</p>
+                </article>
 
-<!-- FAMILIA 5 -->
-<div class="familia-titulo">Familia Vega</div>
-<div class="grid">
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Robert"><div class="card-content"><h3>Robert Vega</h3><small>Patriarca</small><div class="descripcion">Honesto y trabajador; su lealtad a la familia es inquebrantable.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Isabella"><div class="card-content"><h3>Isabella Vega</h3><small>Matriarca</small><div class="descripcion">Cálida pero firme; conoce los secretos del vecindario.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Carter"><div class="card-content"><h3>Carter Vega</h3><small>21 años</small><div class="descripcion">Atleta nato; su sentido de justicia lo arrastra a conflictos.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Eloisa"><div class="card-content"><h3>Eloisa Vega</h3><small>17 años</small><div class="descripcion">Soñadora y observadora; percibe cosas que los adultos ignoran.</div></div></div>
-</div>
+            </div>
+        </div>
+    </section>
 
-<!-- FAMILIA 6 -->
-<div class="familia-titulo">Familia Ferrer</div>
-<div class="grid">
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Dante"><div class="card-content"><h3>Dante Ferrer</h3><small>23 años</small><div class="descripcion">Intenso y protector; suele actuar como protector de la comunidad.</div></div></div>
-    <div class="card"><img src="assets/img/debra.jpg" alt="Debra"><div class="card-content"><h3>Debra Ferrer</h3><small>21 años</small><div class="descripcion">Astuta y estratégica; conoce los recovecos del pueblo.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Lena"><div class="card-content"><h3>Lena Ferrer</h3><small>15 años</small><div class="descripcion">Joven y curiosa; su inocencia contrasta con la oscuridad que la rodea.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Maximilian"><div class="card-content"><h3>Maximilian Ferrer</h3><small>Patriarca</small><div class="descripcion">Hombre de temperamento sereno; su pasado esconde una herida abierta.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Samara"><div class="card-content"><h3>Samara Ferrer</h3><small>Matriarca</small><div class="descripcion">Compasiva y fuerte; sostiene a su familia en los peores momentos.</div></div></div>
-</div>
+</main>
 
-<!-- OTROS PERSONAJES -->
-<div class="familia-titulo">Otros Personajes</div>
-<div class="grid">
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Capitan Reed"><div class="card-content"><h3>Capitán Reed</h3><small>Oficial</small><div class="descripcion">Un hombre que llegó a Grayfall para investigar sucesos extraños; recorre la niebla con paciencia y disciplina.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Jakob"><div class="card-content"><h3>Jakob Ivanov</h3><small>26 años</small><div class="descripcion">Forastero fotográfico; registra anomalías y guarda registros que podrían ser la clave.</div></div></div>
-    <div class="card"><img src="https://via.placeholder.com/300x200?text=Sin+Foto" alt="Monyque"><div class="card-content"><h3>Monyque García</h3><small>21 años</small><div class="descripcion">Joven independiente; su curiosidad la mete en problemas que pocos comprenden.</div></div></div>
-</div>
-
-<!-- FAMILIAS... (todo tu contenido de cards, tal cual lo enviaste) -->
-
-<footer style="max-width:1100px;margin:2rem auto 4rem;padding:1rem;color:#bbb;text-align:center">
-    &copy; 2025 — Secretos • Alejandra Morales
+<footer class="footer">
+    <p>© 2025 — Sitio oficial de Alejandra Morales</p>
 </footer>
-<script src="main.js"></script>
+
 </body>
 </html>
