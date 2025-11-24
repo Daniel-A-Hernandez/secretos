@@ -14,7 +14,7 @@
 body {
     margin: 0;
     font-family: var(--inter);
-    background: #0e0e0e url("../img/winterhill-horizontal.png") center/cover no-repeat fixed;
+    background: #0e0e0e url("../img/winterhill-horizontal.webp") center/cover no-repeat fixed;
     color: #eee;
 }
 
