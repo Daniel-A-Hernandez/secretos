@@ -1,5 +1,5 @@
 ScrollReveal().reveal('.reveal',{
-    duration:850,
+    duration:1100,
     distance:'40px',
     origin: 'bottom',
     easing: 'ease-out',
