@@ -261,14 +261,7 @@ header nav a:hover {
 }
 
 /* OVERLAY */
-.fog-overlay {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 5;
-    background: linear-gradient(rgba(6,6,8,0.15), rgba(6,6,8,0.35));
-    mix-blend-mode: screen;
-}
+
 
 /* GALERÍA CENTRADA */
 .gallery {
@@ -297,7 +290,7 @@ header nav a:hover {
 .gallery img:hover {
     transform: scale(1.08);
     filter: brightness(1);
-    box-shadow:  0 14px 65px var(--accent);
+    box-shadow:  0 0px 40px var(--accent);
     z-index: 100;
 }
 
