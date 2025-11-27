@@ -298,7 +298,71 @@ header nav a:hover {
     display: flex;
     justify-content: center;
 }
+.container-mapa{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.mapa{
+    
+    width: 50%;
+
+}
+.mansion-russell{
+    position: absolute;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 220px;
+    z-index: 100;
+    top: 436px;
+    left: 477px;
+    transform: rotate(-1deg);
+    transition: .6s ease-in-out;
+
+}
+.mansion-russell:hover{
+    filter: drop-shadow(0 0 6px var(--accent));
+    transform: scale(1.08);
+    transition: .6s ease-in-out;
+    cursor: pointer;
+
+}
+.mansion-westbrook{
+    position: absolute;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 170px;
+    top: 221px;
+    left: 770px;
+    transform: rotate(-1deg);
+    transition: .6s ease-in-out;
+
+}
+.mansion-westbrook:hover{
+    filter: drop-shadow(0 0 6px var(--accent));
+    transform: scale(1.08);
+    cursor: pointer;
+    transition: .6s ease-in-out;
+
+}
+.biblioteca{
+    position: absolute;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 130px;
+    top: 330px;
+    left: 600px;
+    transform: rotate(-1deg);
+    transition: .6s ease-in-out;
+}
 @media (max-width: 520px) {
+    body{
+    background: #0e0e0e url("../img/winterhill-vertical.jpg") center/cover no-repeat fixed;
+
+    }
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -310,7 +374,9 @@ header nav a:hover {
      .footer{
         font-size: 0.8rem;
     }
+    
 }
+
 
 /* FOOTER */
 .footer {
