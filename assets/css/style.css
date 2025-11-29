@@ -1,6 +1,7 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
 /* VARIABLES */
 :root {
     --overlay: rgba(6, 6, 10, 0.712);
@@ -8,6 +9,7 @@
     --accent: #b91f36;
     --poppins: 'Poppins', sans-serif;
     --inter: 'Inter', sans-serif;
+    
 }
 
 /* BASE */
@@ -55,6 +57,7 @@ header .content {
 
 
 header h1 {
+    font-weight:bold;
     margin: 0;
     font-size: 1.5rem;
     color: #fff;
@@ -265,40 +268,7 @@ header nav a:hover {
 
 
 /* GALERÍA CENTRADA */
-.gallery {
-    max-width: 1100px;
-    margin: 2rem auto;  /* centrado y separación */
-    padding: 0 1rem;
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.25rem;
-
-    justify-content: center; /* centra columnas */
-    justify-items: center;   /* centra cada imagen dentro de su columna */
-}
-
-.gallery img {
-    width: 200px; /* tamaño uniforme para centrado */
-    height: auto;
-    border-radius: 40px;
-    filter: brightness(0.85);
-    transition: transform 0.6s, filter 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    box-shadow: 0 8px 26px rgba(0,0,0,0.6);
-}
-
-.gallery img:hover {
-    transform: scale(1.08);
-    filter: brightness(1);
-    box-shadow:  0 0px 40px var(--accent);
-    z-index: 100;
-}
-
-.titulo-container-galeria{
-    display: flex;
-    justify-content: center;
-}
 .container-mapa{
     display: flex;
     justify-content: center;
@@ -359,28 +329,7 @@ header nav a:hover {
     transform: rotate(-1deg);
     transition: .6s ease-in-out;
 }
-@media (max-width: 520px) {
-    body{
-        background: #0e0e0e url("../img/winterhill-vertical.jpg") ;
-        background-repeat:no-repeat ;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position:center;
 
-    }
-    .gallery {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .gallery img {
-        width: 100%; /* ocupa todo el ancho de la columna */
-        max-width: 200px; /* opcional, mantiene tamaño similar */
-    }
-     .footer{
-        font-size: 0.8rem;
-    }
-    
-}
 
 
 /* FOOTER */
