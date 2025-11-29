@@ -9,7 +9,7 @@
   --accent: #bb86fc;
   --card-bg: #1b1b22;
   --shadow: rgba(0,0,0,0.45);
-  --transition: 0.3s ease;
+  --transition: 0.8s ease;
   --border-radius: 15px;
 }
 html{
@@ -27,8 +27,7 @@ body {
 .btn-group{
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-    
+  gap: 10px; 
 }
 .btn {
     display: flex;
@@ -50,16 +49,17 @@ body {
     background: #d3b0ff;
     transform: scale(1.06);
     
-}
+  }
 .btn:last-child{
     background-color: #ffffff;
     width: 180px;
+    border: 1px solid #ff6122;
     
-  }
+}
 .btn img:last-child{
-    width: 100px;
-    align-items: center;
-    margin-bottom: 0;
+  width: 100px;
+  align-items: center;
+  margin-bottom: 0;
 }
 .btn-leerbio{
   width: 200px;
@@ -67,41 +67,49 @@ body {
   color: var(--text);
   font-weight: 600;
   padding: 1rem;
-  background-color: #bb86fc;
+  background-color: #b91f36 ;
   border-radius:var(--border-radius) ;
+}
+.btn-leerbio:hover{
+  background-color: #b91f36bb ;
+  transform: scale(1.06);
+  transition: var(--transition);
 }
 /* ======================= SOBRE LA AUTORA ======================= */
 .author-hero {
-    display: grid;
-    grid-template-columns: 1fr 1.3fr;
-    align-items: center;
-    gap: 40px;
-    padding: 60px 8%;
-    background: var(--bg-light);
-    box-shadow: 0 4px 25px var(--shadow);
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 8%;
+  background: var(--bg-light);
+  box-shadow: 0 4px 25px var(--shadow);
 }
-
+.author-photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .author-photo img {
-    width: 70%;
-    border-radius: 100%;
-    object-fit: cover;
-    box-shadow: 0 6px 25px var(--shadow);
-    transition: var(--transition);
-    box-shadow: 0 0px 40px #e8b1ff7c;
+  width: 300px;
+  border-radius: 10%;
+  object-fit: cover;
+  box-shadow: 0 6px 45px #b91f36;
+  transition: var(--transition);
 
 }
 .author-photo img:hover{
-    transform: scale(1.05);
-    transition: var(--transition);
-    box-shadow: 0 0px 40px #e8b1ffc7;
+  transform: scale(1.05);
+  transition: var(--transition);
+  box-shadow: 0 0px 40px #e8b1ffc7;
 
 }
 
 .author-info h1 {
-    font-size: 2.4rem;
-    margin-bottom: 15px;
-    color:#b91f36;
-    font-family: 'finger paint', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+  color:#b91f36;
+  font-family: 'finger paint', sans-serif;
   
 }
 
@@ -128,9 +136,9 @@ body {
 }
 
 .stat-item h4 {
-    font-family: 'poppins', sans-serif;
-    margin: 0;
-    color: var(--accent);
+  font-family: 'poppins', sans-serif;
+  margin: 0;
+  color: var(--accent);
 }
 
 /* ======================= BIOGRAFÍA ======================= */
@@ -139,11 +147,10 @@ body {
 }
 
 .biography-section h2 {
-    color: #e7b1ff;
-    
-    font-size: 2.2rem;
-    margin-bottom: 20px;
-    font-family: 'poppins', sans-serif;
+  color: #e7b1ff; 
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-family: 'poppins', sans-serif;
 }
 
 .bio-content p {
@@ -186,8 +193,8 @@ body {
 
 .book-card img {
   width: 100%;
-  border-radius: 6px;
-  margin-bottom: 15px;
+  border-radius: var(--border-radius);
+  margin-bottom: 15px;  
 }
 
 .book-card h3 {
@@ -226,7 +233,7 @@ body {
 }
 
 .show:hover{
-    transform: translateY(-4px) !important;
+  transform: translateY(-4px) !important;
 }
 
 /* ======================= RESPONSIVE GENERAL ======================= */
@@ -243,6 +250,10 @@ body {
   }
   .author-info{
     text-align: left;
+  }
+  .author-photo img{
+    width: 250px;
+
   }
 }
 
